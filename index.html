@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<!-- Set the viewport widdh to device widdh for mobile -->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"/>
+
+		<title>Concierge - Coming Soon.</title>
+
+		<!-- The Styles -->
+		<link rel="stylesheet" href="assets/css/foundation.min.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="assets/img/icon/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/icon/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/touch-icon-ipad-retina.png">
+
+		<script src="assets/js/modernizr.custom.79408.js" type="text/javascript"></script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/jquery-1.10.2.min.js"><\/script>')</script>
+		<script src="assets/js/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="assets/js/jquery.foundation.reveal.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.localize.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.countdown.min.js" type="text/javascript" ></script>
+		<script src="assets/js/custom.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+
+		<!-- Body background -->
+		<div id="bg" class="bg show0">
+			<!-- Background pattern -->
+			<div class="patt"></div>
+		</div>
+
+		<!-- Site logo -->
+		<div class="logo show4">
+			<img src="assets/img/logo.png" alt="logo">
+		</div>
+
+		<!-- Main container -->
+		<div class="row container ">
+
+			<!-- Section Count -->
+			<section class="six columns hide-for-small section-count vcenter show1">
+				<div id="count" class="count text-center vcenter">
+
+					<div class="dig-days">
+						<div class="desc-day dark" data-localize="count.days">Days</div>
+						<div id="dig-days" class="light"><span>{d100}</span><span>{d10}</span><span>{d1}</span></div>
+					</div>
+
+					<div class="dig-hours">
+						<span id="dig-hours" class="light show2">{hnn}</span>
+						<div class="desc-time dark show3" data-localize="count.hours">Hours</div>
+					</div>
+
+					<div class="dig-delim light show2">:</div>
+
+					<div class="dig-mins">
+						<span id="dig-mins" class="light show2">{mnn}</span>
+						<div class="desc-time dark show3" data-localize="count.mins">Minutes</div>
+					</div>
+
+					<div class="dig-delim light show2">:</div>
+
+					<div class="dig-sec">
+						<span id="dig-sec" class="light show2">{snn}</span>
+						<div class="desc-time dark show3" data-localize="count.sec">Seconds</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- End Section Count -->
+
+			<!-- Section Name -->
+			<section class="six columns text-center border section-name vcenter- show1">
+				<div class="vcenter">
+
+					<!-- Header -->
+					<h1 class="header show3">
+						<span class="light" data-localize="name.name_light"></span>
+					</h1>
+					<h2 class="soon show3">
+						<span class="dark" data-localize="name.name_dark">Coming soon</span>
+					</h2>
+					<!-- End Header -->
+
+					<!-- Small Count. Show if widdh screen is less than 768px -->
+					<div id="count-small" class="twelve count-small text-center hide show-for-small">
+						<span class="dark">{dnn}</span>:<span class="light">{hnn}</span>:<span class="dark">{mnn}</span>:<span class="light">{snn}</span>
+					</div>
+
+					<!-- Description -->
+					<article class="light desc show3" data-localize="name.desc">
+						See you in The Easy this Friday for the first demo of Concierge. Wake up in style.
+
+					</article>
+					<!-- End Description -->
+
+				</div>
+			</section>
+			<!-- End Section Name -->
+
+		</div>
+		<!-- End Main container -->
+
+
+		<!-- Template error messages -->
+		<div class="hide">
+			<div id="tempRequired" data-localize="messages.required">This field is required</div>
+			<div id="tempMail" data-localize="messages.mail">Please enter a valid email address</div>
+			<div id="tempSubs" data-localize="messages.subs">This email is already signed</div>
+			<div id="tempSuccess"><div class="alert-box success" data-localize="messages.success">Your email is saved</div></div>
+		</div>
+		<!-- End Template error messages -->
+
+		<!-- Preloader -->
+		<div id="preLoad"><div id="circleG">
+			<div id="circleG_1" class="circleG"></div>
+			<div id="circleG_2" class="circleG"></div>
+			<div id="circleG_3" class="circleG"></div>
+		</div></div>
+		<!-- End Preloader -->
+
+	</body>
+</html>
